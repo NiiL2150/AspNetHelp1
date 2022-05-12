@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <button onclick="FillList()">Fill</button>
+
+        <label id="result"></label>
+
+        <form onsubmit="AddStudent(event)">
+            <input
+                type="number"
+                name="studentId"
+                id="studentId"
+                placeholder="ID"
+            />
+            <input type="text" name="Name" id="name" placeholder="Name" />
+            <input
+                type="text"
+                name="LastName"
+                id="lastName"
+                placeholder="Last name"
+            />
+            <input type="number" name="Group" id="group" placeholder="Group" />
+            <input type="date" name="BirthDate" id="birthDate" />
+
+            <input type="submit" value="Add" value="Add" />
+            <button onclick="EditStudent(event)">Edit</button>
+            <button onclick="DeleteStudent(event)">Delete</button>
+        </form>
+
+        <ul id="students"></ul>
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>
